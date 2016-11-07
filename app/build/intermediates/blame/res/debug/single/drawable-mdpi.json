@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_reply_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/generated/res/pngs/debug/drawable-mdpi/ic_reply_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_edit_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-mdpi/ic_edit_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_favorite_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/generated/res/pngs/debug/drawable-mdpi/ic_favorite_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_reply_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-mdpi/ic_reply_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_edit_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/generated/res/pngs/debug/drawable-mdpi/ic_edit_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_crop_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-mdpi/ic_crop_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_crop_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/generated/res/pngs/debug/drawable-mdpi/ic_crop_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_favorite_black_24dp.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-mdpi/ic_favorite_black_24dp.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_profile.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/drawable-mdpi/ic_profile.png"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_fav.png",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/drawable-mdpi/ic_action_fav.png"
+    }
+]

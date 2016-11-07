@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_081902bb4e7f91adf4e77780495017938f2a1a74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_fef8a11093589725f13931964a093f2c1a9dd985.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_94b23668bf3df52a5d3a682027ca653d462dba00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5520b0b5d7bb0f1ea3d228a1af39f0cb99f236e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_1ea45406f80139bc88cc1423d3963827ec060e8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_74c584791bd6f1f551af124875d96fef3c7f9ad9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_141007f386882b08326e0806588dd2b3d92fe3c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_be7d1a529ebf521103b6dddeb2ce87d3cf748fea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_7904b280dd30a59db3588c6f17757c5a52eea4fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_3a042bdce668fa2674db8d1ab86f6914c8722988.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/3.1.1/f205bcc63da15f536f333e1c82de622fdbb35956/dbflow-core-3.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f205bcc63da15f536f333e1c82de622fdbb35956">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/dbflow-core-3.1.1_fd7101aee27d989577e7add569ae42ff0c7cea69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_204436bdedf3283dee6641710167d1241dbf95a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_aee9118f80369a876622f67f309315423651e533.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_36f749fa40f2c0d9845effc4414cecc13941819f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/codepath-utils_2a9f2e284cd3a8170b358b5d1812ec0e0aebdc4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_438c7cbe40504bf1c104fb4e6d7f582fcc0a5e1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_fe396ffa0ff2cad6bbb43a204f5eaddc84afd7a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_da56bfba847378fa8e3d9fe22cbd3eaf79f4f970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_04e27fccb75aafa5208e54577794a134e257f357.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_206b1d586981bb46de3912d074900cca6a595d15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_66f6c8573427670385091505264309054fee2c25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_5d733b9b11733f075cf90628e004a2b5e8b08371.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_634068b7c3a58a88eaf67c1a8c43de4099d30f52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/codepath-utils_e3c344bce52ffcd8ee01d6321c66043be8369509.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_c469cc0a2205fe81518865782afa22bcc622099b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_67698373e74a92d9a634ab0c840e689695709d25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.yqritc/android-scalablevideoview/1.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4394e0421a1e2c0cb691a783a393c192a84697ab">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.yqritc-android-scalablevideoview-1.0.4_a467b3c67ab330dd8acb0cdfd97a869859e182f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_f27543400824943fc27ab5606d21104d54466d11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/3.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="58342b97007b49e4a536bdd30b9c3928be81ae59">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-3.1.1_6738a9c554b18880af8a13614c7310d16dfd5e45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_c22f49ed73a7377009e0f0bebf0006668f6806f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_fc853909e56b0f3d3c3bcb86836c695bd158eec0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_de2147bdb77f04e90e5f0c559e18ca407844fbce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_ac38f3246f6522217bb905c908c002e713d824e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.2/5e227e2d794cf680dd34fb04dd564ce58d6c764d/baseLibrary-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5e227e2d794cf680dd34fb04dd564ce58d6c764d">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.2_9b2e05fede34e126aa5498410d964495011d466d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.yqritc/android-scalablevideoview/1.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4394e0421a1e2c0cb691a783a393c192a84697ab">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.yqritc-android-scalablevideoview-1.0.4_916c7e5cd740f6d938b14df27c63b23eb6df36aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.1.1/d081ad6f7c51627ebe2dbf157cc525cbf5e9c821/parceler-api-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d081ad6f7c51627ebe2dbf157cc525cbf5e9c821">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/parceler-api-1.1.1_3b447b6afe02fbad1ac12d4a3e299af98d994d7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5ed95bd0b6675a0961f4b798433c7ce5b052777d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_976334e6097de0613fafa0f0a4b8d23fbf9d19a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/jp.wasabeef/glide-transformations/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="df451c6f391e3e32022fc964ed87bd57a5869128">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/jp.wasabeef-glide-transformations-2.0.1_57ba815dcc5297d914fb016fbe289df54d9d3e71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_e80f9d86bf52a1c7f1eafd307fac5a7d0d5c66c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_cc4510c684804045ed21ee2c5bcfb1193d160acf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_b57f2657e20f1a40450327c486d9fc2d3c89ae55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_2b220a0d6ea5011e67920660c606debb6a1f85e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_b51ecdb16666f57a9a4a202f7591d9a451f14f06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/3.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="58342b97007b49e4a536bdd30b9c3928be81ae59">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-3.1.1_2ec7937c3bff1974d2d6ceeaba6631800c6941a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_f0cde0dc67ef4e0d415b17dc7d65abf363f5320f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_86e9aabeb746157d57c6239b588ff11f50e9bd7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/glide-3.7.0_c4b386aeb3e904fa1a3890a3502257a84aec6400.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_a42b4812dcf09735f13f9b1475ece447dc06c8b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_d25aef23b75c418de7e20cd7bbc5193c3e5cd9b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_08bc54c009157f695693c5c960f362faeda787ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/jp.wasabeef/glide-transformations/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="df451c6f391e3e32022fc964ed87bd57a5869128">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/jp.wasabeef-glide-transformations-2.0.1_d1c4f48cd1ebdb80eebe6bdb6995ba00959959aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_5dccd1d05f03d18c8e7b169939a4587a8ba6c40d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_056a20ca9e744bd462a8c36a574d064ec130082b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_7f3063e56f4e0c737d7f85dd62963e98c062fb73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5d6df744e85b79be4315283f3658c6ba0f0c3a75.jar" />
+    </item>
+
+</items>

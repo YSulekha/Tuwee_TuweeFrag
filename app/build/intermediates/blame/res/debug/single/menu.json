@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/menu/menu_twitter.xml",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/menu/menu_twitter.xml"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/menu/menu_fragment.xml",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/res/menu/menu_fragment.xml"
+    }
+]

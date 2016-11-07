@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:2:1-69:12
+	package
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:9:22-78
+application
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:11:5-67:19
+MERGED from [com.github.Raizlabs.DBFlow:dbflow:3.1.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/3.1.1/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:15:9-41
+	android:allowBackup
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:14:9-44
+	android:theme
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:16:9-40
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:12:9-43
+activity#com.codepath.apps.tweet.LoginActivity
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:17:9-37:20
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:19:13-45
+	android:noHistory
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:20:13-37
+	android:theme
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:21:13-56
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:18:13-42
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:25:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:27:13-36:29
+action#android.intent.action.VIEW
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:30:17-76
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:30:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:31:17-78
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:31:27-75
+data
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:33:17-35:46
+	android:host
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:34:21-48
+	android:scheme
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:35:21-43
+activity#com.codepath.apps.tweet.activities.TimelineActivity
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:38:9-41:59
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:40:13-60
+	android:theme
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:41:13-56
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:39:13-56
+activity#com.codepath.apps.tweet.activities.TwitterDetailActivity
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:42:9-50:20
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:44:13-49
+	android:parentActivityName
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:45:13-70
+	android:theme
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:46:13-44
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:43:13-61
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:47:13-49:64
+	android:value
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:49:17-61
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:48:17-63
+activity#com.codepath.apps.tweet.activities.ProfileActivity
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:51:9-58:20
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:52:13-50
+	android:parentActivityName
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:53:13-70
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:51:19-61
+activity#com.codepath.apps.tweet.activities.SearchActivity
+ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:59:9-66:20
+	android:label
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:60:13-50
+	android:parentActivityName
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:61:13-70
+	android:name
+		ADDED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml:59:19-60
+uses-sdk
+INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.github.Raizlabs.DBFlow:dbflow:3.1.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/3.1.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.codepath.libraries:android-oauth-handler:1.1.0] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.yqritc/android-scalablevideoview/1.0.4/AndroidManifest.xml:8:5-10:41
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/jp.wasabeef/glide-transformations/2.0.1/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.databinding:adapters:1.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.1] /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/src/main/AndroidManifest.xml

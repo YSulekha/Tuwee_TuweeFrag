@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tuwee TuweeFR</string>
+    <string name="login_label">Log in</string>
+    <string name="title_activity_timeline">Home</string>
+    <string name="reply_text">reply</string>
+    <string name="detail_label">Tweet</string>
+    <string name="profile_label">Profile</string>
+    <string name="no_internet">Limited data displayed.No network available</string>
+    <string name="no_network">No internet available</string>
+    <string name="profile">Profile</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="retweeted_success">Retweeted successfully</string>
+</resources>
