@@ -20,6 +20,10 @@
         "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_reply_black_24dp.xml"
     },
     {
+        "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_search_black_24dp.xml",
+        "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search_black_24dp.xml"
+    },
+    {
         "merged": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_reply_black_24dp.xml",
         "source": "/Users/aharyadi/Documents/AndroidWS/CodePath/TuweeTuwee/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_reply_black_24dp.xml"
     },

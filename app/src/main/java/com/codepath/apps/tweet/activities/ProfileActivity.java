@@ -35,9 +35,14 @@ public class ProfileActivity extends AppCompatActivity {
         profileBinding = DataBindingUtil.setContentView(this, R.layout.activity_profile);
         Intent intent = getIntent();
         boolean isUser = intent.getBooleanExtra("isUser",false);
+        boolean isUnknownUser = intent.getBooleanExtra("isUnknownUser",false);
         User user = null;
         if(isUser){
             getUserHeader();
+        }
+        else if(isUnknownUser){
+            String screenName = intent.getStringExtra("screenName");
+            getUserInfo(screenName);
         }
         else{
             user = (User) Parcels.unwrap(intent.getParcelableExtra("user"));
@@ -48,6 +53,9 @@ public class ProfileActivity extends AppCompatActivity {
             String screenName = null;
             if(user != null){
                 screenName = user.getScreenName();
+            }
+            if(isUnknownUser) {
+                screenName = intent.getStringExtra("screenName");
             }
             UserTimeLineFragment userTimeLineFragment = UserTimeLineFragment.newInstance(screenName);
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -72,6 +80,26 @@ public class ProfileActivity extends AppCompatActivity {
     private void getUserHeader(){
         twitterClient = TwitterApplication.getRestClient();
         twitterClient.getUserInfo(new JsonHttpResponseHandler() {
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                User user = User.fromJSONObject(response);
+                Log.v("ProfileActTagLine",response.toString());
+                populateProfileHeader(user);
+
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                Log.v("failure", errorResponse.toString());
+            }
+
+
+        });
+    }
+    private void getUserInfo(String screenName){
+        twitterClient = TwitterApplication.getRestClient();
+        twitterClient.getUserDetails(screenName,new JsonHttpResponseHandler() {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {

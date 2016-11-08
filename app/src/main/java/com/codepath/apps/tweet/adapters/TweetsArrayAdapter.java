@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -21,10 +22,12 @@ import com.codepath.apps.tweet.R;
 import com.codepath.apps.tweet.TwitterApplication;
 import com.codepath.apps.tweet.TwitterClient;
 import com.codepath.apps.tweet.activities.ProfileActivity;
+import com.codepath.apps.tweet.activities.SearchActivity;
 import com.codepath.apps.tweet.databinding.ContentItemBinding;
 import com.codepath.apps.tweet.fragments.ComposeDialog;
 import com.codepath.apps.tweet.models.Tweet;
 import com.codepath.apps.tweet.models.User;
+import com.codepath.apps.tweet.utils.PatternEditableBuilder;
 import com.codepath.apps.tweet.utils.Utility;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -35,6 +38,7 @@ import org.parceler.Parcels;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
@@ -59,14 +63,38 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         Tweet tweet = tweets.get(position);
         User user = tweet.getUser();
 
         holder.binding.setTweet(tweet);
         holder.binding.setUser(user);
+
        // holder.binding.itemProfile.setTag(user);
         holder.binding.executePendingBindings();
+        new PatternEditableBuilder().
+                addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+                                Log.v("ddd",text);
+                                Intent i = new Intent(mContext, ProfileActivity.class);
+                                i.putExtra("isUser", false);
+                                i.putExtra("isUnknownUser",true);
+                                i.putExtra("screenName",text);
+                                mContext.startActivity(i);
+                            }
+                        }).
+                addPattern(Pattern.compile("\\#(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+                                Intent intent = new Intent(mContext, SearchActivity.class);
+                                intent.putExtra("query",text);
+                                mContext.startActivity(intent);
+                            }
+                        }).into(holder.binding.itemBody);
+
 
     }
 
@@ -115,6 +143,15 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
         public ViewHolder(View itemView) {
             super(itemView);
             binding = DataBindingUtil.bind(itemView);
+            new PatternEditableBuilder().
+                    addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
+                            new PatternEditableBuilder.SpannableClickedListener() {
+                                @Override
+                                public void onSpanClicked(String text) {
+
+                                }
+                            }).into(binding.itemBody);
+
             binding.itemProfile.setOnClickListener(this);
             binding.itemRetweet.setOnClickListener(this);
         }
@@ -141,6 +178,7 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
             User user = (User) tweets.get(pos).getUser();
             i.putExtra("user", Parcels.wrap(user));
             i.putExtra("isUser", false);
+            i.putExtra("isUnknownUser",false);
             mContext.startActivity(i);
 
         }

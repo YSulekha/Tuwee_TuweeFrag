@@ -96,6 +96,7 @@ public class TweetsListFragment extends Fragment  {
         inflater.inflate(R.menu.menu_fragment, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

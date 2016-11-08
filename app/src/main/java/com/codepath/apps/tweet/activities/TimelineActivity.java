@@ -125,6 +125,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
     public void onProfileView(MenuItem item) {
         Intent i = new Intent(this,ProfileActivity.class);
         i.putExtra("isUser",true);
+        i.putExtra("isUnknownUser",false);
         startActivity(i);
     }
 

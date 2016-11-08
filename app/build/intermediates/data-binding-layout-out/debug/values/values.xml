@@ -572,13 +572,14 @@
     <string name="detail_label">Tweet</string>
     <string name="followers">Followers</string>
     <string name="following">Following</string>
-    <string name="login_label">Log in</string>
+    <string name="login_label">Connect with Twitter</string>
     <string name="no_internet">Limited data displayed.No network available</string>
     <string name="no_network">No internet available</string>
     <string name="profile">Profile</string>
     <string name="profile_label">Profile</string>
     <string name="reply_text">reply</string>
     <string name="retweeted_success">Retweeted successfully</string>
+    <string name="search">Search Results</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_timeline">Home</string>
@@ -602,12 +603,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTheme">@style/MyApp.ActionBarTheme</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
+
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
@@ -1625,6 +1628,10 @@
     <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
         <item name="titleTextStyle">@style/MyTitleTextStyle</item>
     </style>
+    <style name="MyApp.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        
+        <item name="colorControlNormal">@color/dark_grey</item>
+    </style>
     <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/title_color</item>
         <item name="android:textSize">18sp</item>
@@ -1930,6 +1937,9 @@
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/dark_grey</item>
     </style>
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         
