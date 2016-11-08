@@ -43,13 +43,13 @@ import cz.msebera.android.httpclient.Header;
 import static com.codepath.apps.tweet.activities.TimelineActivity.DETAIL_TWEET;
 
 
-public class TweetsListFragment extends Fragment  {
+public class TweetsListFragment extends Fragment {
 
     FragmentTweetsListBinding binding;
-     TweetsArrayAdapter recyclerAdapter;
-     RecyclerView recyclerView;
-     SwipeRefreshLayout swipeRefreshLayout;
-     ArrayList<Tweet> tweets;
+    TweetsArrayAdapter recyclerAdapter;
+    RecyclerView recyclerView;
+    SwipeRefreshLayout swipeRefreshLayout;
+    ArrayList<Tweet> tweets;
     EndlessScrollViewListener endlessScrollViewListener;
     LinearLayoutManager linearLayoutManager;
     MenuItem mProgressbar;
@@ -58,8 +58,8 @@ public class TweetsListFragment extends Fragment  {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding =  DataBindingUtil.inflate(inflater,R.layout.fragment_tweets_list,container,false);
-        Log.v("InOnCreateView","sas");
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_tweets_list, container, false);
+        Log.v("InOnCreateView", "sas");
         recyclerView = binding.timelineRecycler;
 
         swipeRefreshLayout = binding.swipeContainer;
@@ -84,14 +84,12 @@ public class TweetsListFragment extends Fragment  {
         });
 
 
-
-
         return binding.getRoot();
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu,inflater);
+        super.onCreateOptionsMenu(menu, inflater);
         mMenu = menu;
         inflater.inflate(R.menu.menu_fragment, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
@@ -115,8 +113,8 @@ public class TweetsListFragment extends Fragment  {
     }
 
     private void onTweetSearch(String query) {
-            Intent intent = new Intent(getActivity(), SearchActivity.class);
-        intent.putExtra("query",query);
+        Intent intent = new Intent(getActivity(), SearchActivity.class);
+        intent.putExtra("query", query);
         startActivity(intent);
     }
 
@@ -127,16 +125,13 @@ public class TweetsListFragment extends Fragment  {
     }
 
 
-
-
-
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
 
         // Store instance of the menu item containing progress
         mProgressbar = menu.findItem(R.id.miActionProgress);
         // Extract the action-view from the menu item
-        ProgressBar v =  (ProgressBar) MenuItemCompat.getActionView(mProgressbar);
+        ProgressBar v = (ProgressBar) MenuItemCompat.getActionView(mProgressbar);
         // Return to finish
         super.onPrepareOptionsMenu(menu);
     }
@@ -148,7 +143,7 @@ public class TweetsListFragment extends Fragment  {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);
-                Log.v("HomeTimeLine",response.toString());
+                Log.v("HomeTimeLine", response.toString());
             }
 
             @Override

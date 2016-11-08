@@ -116,7 +116,6 @@ public class UserTimeLineFragment extends TweetsListFragment {
                 }
                 maxId = tweets.get(tweets.size() - 1).getTweetId() - 1;
                 sinceId = tweets.get(0).getTweetId();
-                log.v("sinceId",String.valueOf(sinceId));
                 recyclerAdapter.notifyDataSetChanged();
             }
 

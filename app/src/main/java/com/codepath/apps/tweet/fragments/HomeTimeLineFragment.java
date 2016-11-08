@@ -29,16 +29,16 @@ import cz.msebera.android.httpclient.Header;
 import static com.loopj.android.http.AsyncHttpClient.log;
 import static com.raizlabs.android.dbflow.sql.language.SQLite.select;
 
-public class HomeTimeLineFragment extends TweetsListFragment  {
+public class HomeTimeLineFragment extends TweetsListFragment {
 
-    private  TwitterClient twitterClient;
+    private TwitterClient twitterClient;
     private long sinceId = 0;
     private long maxId = 0;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v =  super.onCreateView(inflater, container, savedInstanceState);
+        View v = super.onCreateView(inflater, container, savedInstanceState);
         endlessScrollViewListener = new EndlessScrollViewListener(linearLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
@@ -50,9 +50,9 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
         twitterClient = TwitterApplication.getRestClient();
         if (!Utility.isNetworkAvailable(getActivity())) {
             //  Organization_Table.name.is("CodePath")
-            tweets.addAll(select().from(Tweet.class).orderBy(Tweet_Table.createdAt,false).queryList());
+            tweets.addAll(select().from(Tweet.class).orderBy(Tweet_Table.createdAt, false).queryList());
             recyclerAdapter.notifyDataSetChanged();
-            Toast.makeText(getActivity(),getResources().getString(R.string.no_internet),Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
         } else {
             //populate timeline
             populateTimeline(true, false);
@@ -61,11 +61,10 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                if(!Utility.isNetworkAvailable(getActivity())){
-                    Toast.makeText(getActivity(),getResources().getString(R.string.no_internet),Toast.LENGTH_LONG).show();
+                if (!Utility.isNetworkAvailable(getActivity())) {
+                    Toast.makeText(getActivity(), getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
                     swipeRefreshLayout.setRefreshing(false);
-                }
-                else {
+                } else {
                     populateTimeline(true, true);
                 }
             }
@@ -76,19 +75,18 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
     @Override
     public void onResume() {
         super.onResume();
-        Log.v("OnResume","dss");
+
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
     }
+
     //Method to fetch the tweets to populate timeline
     private void populateTimeline(boolean isFirstTime, final boolean isRefresh) {
-        if(mMenu!=null){
+        if (mMenu != null) {
             mMenu.findItem(R.id.miActionProgress).setVisible(true);
         }
 
@@ -108,7 +106,7 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                Log.v("getHomeTimeLine",response.toString());
+                Log.v("getHomeTimeLine", response.toString());
                 if (isRefresh) {
                     tweets.addAll(0, Tweet.fromJSONArray(response));
                     swipeRefreshLayout.setRefreshing(false);
@@ -118,9 +116,9 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
                 }
                 maxId = tweets.get(tweets.size() - 1).getTweetId() - 1;
                 sinceId = tweets.get(0).getTweetId();
-                log.v("sinceId",String.valueOf(sinceId));
+                log.v("sinceId", String.valueOf(sinceId));
                 recyclerAdapter.notifyDataSetChanged();
-                if(mMenu!=null){
+                if (mMenu != null) {
                     mMenu.findItem(R.id.miActionProgress).setVisible(false);
                 }
 
@@ -128,16 +126,15 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                if(errorResponse!=null) {
+                if (errorResponse != null) {
                     Log.v("PopulateTimeline", errorResponse.toString());
+                } else {
+                    Log.v("PopulateTimeline", throwable.toString());
                 }
-                else{
-                    Log.v("PopulateTimeline",throwable.toString());
-                }
-                if(mMenu!=null){
+                if (mMenu != null) {
                     mMenu.findItem(R.id.miActionProgress).setVisible(false);
                 }
-                if(isRefresh){
+                if (isRefresh) {
                     swipeRefreshLayout.setRefreshing(false);
                 }
             }
@@ -145,7 +142,8 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
 
         }, params);
     }
-@Override
+
+    @Override
     public void onTweet(RequestParams params) {
         TwitterClient twitterClient = TwitterApplication.getRestClient();
         twitterClient.tweetStatus(new JsonHttpResponseHandler() {
@@ -153,7 +151,6 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);
-                Log.v("HomeTimeLine112",response.toString());
                 populateTimeline(true, true);
                 recyclerView.scrollToPosition(0);
 
@@ -166,7 +163,6 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
             }
         }, params);
     }
-
 
 
 }

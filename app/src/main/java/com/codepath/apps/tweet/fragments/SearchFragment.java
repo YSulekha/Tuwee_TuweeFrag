@@ -30,9 +30,6 @@ import cz.msebera.android.httpclient.Header;
 import static com.loopj.android.http.AsyncHttpClient.log;
 import static com.raizlabs.android.dbflow.sql.language.SQLite.select;
 
-/**
- * Created by aharyadi on 11/7/16.
- */
 
 public class SearchFragment extends TweetsListFragment {
     private TwitterClient twitterClient;

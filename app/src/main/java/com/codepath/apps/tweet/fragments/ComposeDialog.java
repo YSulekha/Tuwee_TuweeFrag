@@ -19,25 +19,26 @@ public class ComposeDialog extends DialogFragment {
 
     private DialogTweetBinding binding;
     String status;
-   private SaveFilterListener listener;
-   private static boolean isReply=false;
+    private SaveFilterListener listener;
+    private static boolean isReply = false;
     private static String userId;
-    private static  long tweetId;
+    private static long tweetId;
     private static HomeTimeLineFragment fragment;
-    public ComposeDialog(){
+
+    public ComposeDialog() {
 
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof Activity){
-           this.listener = (SaveFilterListener) context;
+        if (context instanceof Activity) {
+            this.listener = (SaveFilterListener) context;
         }
     }
 
-    public interface SaveFilterListener{
-       // void onTweet(String status,boolean isReply);
+    public interface SaveFilterListener {
+        // void onTweet(String status,boolean isReply);
         void onTweet(RequestParams params);
     }
 
@@ -46,10 +47,9 @@ public class ComposeDialog extends DialogFragment {
         super.onCreate(savedInstanceState);
     }
 
-    public static ComposeDialog newInstance(Bundle args){
+    public static ComposeDialog newInstance(Bundle args) {
         ComposeDialog cd = new ComposeDialog();
-     //  fragment = (HomeTimeLineFragment) args.get("fragment");
-      if(args != null){
+        if (args != null) {
             isReply = args.getBoolean("reply");
             userId = args.getString("userId");
             tweetId = args.getLong("tweetId");
@@ -60,8 +60,8 @@ public class ComposeDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       //return inflater.inflate(R.layout.dialog_tweet,container);
-       binding =  DataBindingUtil.inflate(inflater,R.layout.dialog_tweet,container,false);
+        //return inflater.inflate(R.layout.dialog_tweet,container);
+        binding = DataBindingUtil.inflate(inflater, R.layout.dialog_tweet, container, false);
 
         binding.setHandlers(this);
         return binding.getRoot();
@@ -70,47 +70,20 @@ public class ComposeDialog extends DialogFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        if(isReply){
+        if (isReply) {
             binding.dialogStatus.setText(userId);
         }
         status = binding.dialogStatus.getText().toString();
 
     }
 
- /*   public void onClick(View v){
-        if(isReply){
-            listener = (TwitterDetailActivity) getActivity();
-            RequestParams params = new RequestParams();
-            status = binding.dialogStatus.getText().toString();
-            params.put("status",status);
-            params.put("in_reply_to_status_id",tweetId);
-            listener.onTweet(params);
-
-        }
-        else {
-            listener = (TimelineActivity) getActivity();
-
-            status = binding.dialogStatus.getText().toString();
-            RequestParams params = new RequestParams();
-            params.put("status", status);
-            if (isReply) {
-                params.put("in_reply_to_status_id", tweetId);
-            }
-            listener.onTweet(params);
-        }
-       // listener.onTweet(status,false);
-        dismiss();
-    }*/
-    public void onClick(View v){
+    public void onClick(View v) {
         status = binding.dialogStatus.getText().toString();
         RequestParams params = new RequestParams();
         params.put("status", status);
-        if(tweetId!=0){
+        if (tweetId != 0) {
             params.put("in_reply_to_status_id", tweetId);
         }
-      //  TweetsListFragment fragment = new TweetsListFragment();
-        //   fragment.twitterClient =
-     //   fragment.onTweet(params);
         listener.onTweet(params);
         dismiss();
     }

@@ -13,14 +13,14 @@ import java.lang.String;
  * This is generated code. Please do not modify */
 public final class TwitterDatabaseTwitterDatabase_Database extends DatabaseDefinition {
   public TwitterDatabaseTwitterDatabase_Database(DatabaseHolder holder) {
-    holder.putDatabaseForTable(Tweet.class, this);
     holder.putDatabaseForTable(User.class, this);
-    models.add(Tweet.class);
-    modelTableNames.put("Tweet", Tweet.class);
-    modelAdapters.put(Tweet.class, new Tweet_Adapter(holder, this));
+    holder.putDatabaseForTable(Tweet.class, this);
     models.add(User.class);
     modelTableNames.put("User", User.class);
     modelAdapters.put(User.class, new User_Adapter(holder, this));
+    models.add(Tweet.class);
+    modelTableNames.put("Tweet", Tweet.class);
+    modelAdapters.put(Tweet.class, new Tweet_Adapter(holder, this));
   }
 
   @Override
