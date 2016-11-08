@@ -155,9 +155,7 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
     public void onTweet(RequestParams params) {
         Log.v("DetailOnTweet","dd");
         isReply = true;
-
         TweetsListFragment fragment = new TweetsListFragment();
-     //   fragment.twitterClient =
         fragment.onTweet(params);
     }
 }

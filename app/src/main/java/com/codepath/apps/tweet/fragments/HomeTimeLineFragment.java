@@ -26,6 +26,7 @@ import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
 
+import static com.loopj.android.http.AsyncHttpClient.log;
 import static com.raizlabs.android.dbflow.sql.language.SQLite.select;
 
 public class HomeTimeLineFragment extends TweetsListFragment  {
@@ -44,7 +45,6 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
                 populateTimeline(false, false);
             }
         };
-        Log.v("getHomeTimeLine","DCDC");
         recyclerView.addOnScrollListener(endlessScrollViewListener);
 
         twitterClient = TwitterApplication.getRestClient();
@@ -61,7 +61,13 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                populateTimeline(true, true);
+                if(!Utility.isNetworkAvailable(getActivity())){
+                    Toast.makeText(getActivity(),getResources().getString(R.string.no_internet),Toast.LENGTH_LONG).show();
+                    swipeRefreshLayout.setRefreshing(false);
+                }
+                else {
+                    populateTimeline(true, true);
+                }
             }
         });
         return v;
@@ -70,8 +76,7 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
     @Override
     public void onResume() {
         super.onResume();
-        //populateTimeline(true, true);
-        //recyclerView.scrollToPosition(0);
+        Log.v("OnResume","dss");
     }
 
     @Override
@@ -113,6 +118,7 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
                 }
                 maxId = tweets.get(tweets.size() - 1).getTweetId() - 1;
                 sinceId = tweets.get(0).getTweetId();
+                log.v("sinceId",String.valueOf(sinceId));
                 recyclerAdapter.notifyDataSetChanged();
                 if(mMenu!=null){
                     mMenu.findItem(R.id.miActionProgress).setVisible(false);
@@ -137,6 +143,27 @@ public class HomeTimeLineFragment extends TweetsListFragment  {
             }
 
 
+        }, params);
+    }
+@Override
+    public void onTweet(RequestParams params) {
+        TwitterClient twitterClient = TwitterApplication.getRestClient();
+        twitterClient.tweetStatus(new JsonHttpResponseHandler() {
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                super.onSuccess(statusCode, headers, response);
+                Log.v("HomeTimeLine112",response.toString());
+                populateTimeline(true, true);
+                recyclerView.scrollToPosition(0);
+
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                // Log.v("failure", errorResponse.toString());
+
+            }
         }, params);
     }
 

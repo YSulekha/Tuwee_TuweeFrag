@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 07 02:42:33 PST 2016
+#Mon Nov 07 15:10:25 PST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/aharyadi/Documents/AndroidWS/CodePath/TweetFragment/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_cab_background_top_material.xml

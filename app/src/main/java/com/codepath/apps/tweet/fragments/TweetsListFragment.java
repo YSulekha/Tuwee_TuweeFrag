@@ -43,7 +43,7 @@ import cz.msebera.android.httpclient.Header;
 import static com.codepath.apps.tweet.activities.TimelineActivity.DETAIL_TWEET;
 
 
-public class TweetsListFragment extends Fragment implements ComposeDialog.SaveFilterListener {
+public class TweetsListFragment extends Fragment  {
 
     FragmentTweetsListBinding binding;
      TweetsArrayAdapter recyclerAdapter;
@@ -84,6 +84,8 @@ public class TweetsListFragment extends Fragment implements ComposeDialog.SaveFi
         });
 
 
+
+
         return binding.getRoot();
     }
 
@@ -122,25 +124,9 @@ public class TweetsListFragment extends Fragment implements ComposeDialog.SaveFi
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
-    @Override
-    public void onTweet(RequestParams params) {
-        TwitterClient twitterClient = TwitterApplication.getRestClient();
-        twitterClient.tweetStatus(new JsonHttpResponseHandler() {
 
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                super.onSuccess(statusCode, headers, response);
-                Log.v("HomeTimeLine",response.toString());
 
-            }
 
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                // Log.v("failure", errorResponse.toString());
-
-            }
-        }, params);
-    }
 
 
     @Override
@@ -154,6 +140,24 @@ public class TweetsListFragment extends Fragment implements ComposeDialog.SaveFi
         super.onPrepareOptionsMenu(menu);
     }
 
+    public void onTweet(RequestParams params) {
+        TwitterClient twitterClient = TwitterApplication.getRestClient();
+        twitterClient.tweetStatus(new JsonHttpResponseHandler() {
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                super.onSuccess(statusCode, headers, response);
+                Log.v("HomeTimeLine",response.toString());
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                // Log.v("failure", errorResponse.toString());
+            }
+        }, params);
     }
+
+
+}
 
 

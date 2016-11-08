@@ -23,6 +23,7 @@ public class ComposeDialog extends DialogFragment {
    private static boolean isReply=false;
     private static String userId;
     private static  long tweetId;
+    private static HomeTimeLineFragment fragment;
     public ComposeDialog(){
 
     }
@@ -31,7 +32,7 @@ public class ComposeDialog extends DialogFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof Activity){
-            this.listener = (SaveFilterListener) context;
+           this.listener = (SaveFilterListener) context;
         }
     }
 
@@ -47,7 +48,8 @@ public class ComposeDialog extends DialogFragment {
 
     public static ComposeDialog newInstance(Bundle args){
         ComposeDialog cd = new ComposeDialog();
-        if(args != null){
+     //  fragment = (HomeTimeLineFragment) args.get("fragment");
+      if(args != null){
             isReply = args.getBoolean("reply");
             userId = args.getString("userId");
             tweetId = args.getLong("tweetId");
@@ -106,6 +108,9 @@ public class ComposeDialog extends DialogFragment {
         if(tweetId!=0){
             params.put("in_reply_to_status_id", tweetId);
         }
+      //  TweetsListFragment fragment = new TweetsListFragment();
+        //   fragment.twitterClient =
+     //   fragment.onTweet(params);
         listener.onTweet(params);
         dismiss();
     }

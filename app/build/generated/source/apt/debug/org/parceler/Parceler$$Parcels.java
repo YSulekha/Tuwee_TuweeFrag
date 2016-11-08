@@ -8,7 +8,7 @@ import com.codepath.apps.tweet.models.Tweet$$Parcelable;
 import com.codepath.apps.tweet.models.User;
 import com.codepath.apps.tweet.models.User$$Parcelable;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-07T02:42-0800")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-07T19:52-0800")
 @SuppressWarnings({
     "unchecked",
     "deprecation"

@@ -19,18 +19,21 @@ import com.codepath.apps.tweet.R;
 import com.codepath.apps.tweet.adapters.ViewPagerAdapter;
 import com.codepath.apps.tweet.databinding.ActivityTimelineBinding;
 import com.codepath.apps.tweet.fragments.ComposeDialog;
+import com.codepath.apps.tweet.fragments.HomeTimeLineFragment;
 import com.codepath.apps.tweet.fragments.TweetsListFragment;
 import com.codepath.apps.tweet.utils.Utility;
 import com.loopj.android.http.RequestParams;
 
 
-public class TimelineActivity extends AppCompatActivity   {
+public class TimelineActivity extends AppCompatActivity implements ComposeDialog.SaveFilterListener  {
 
 
 
     private TweetsListFragment tweetFragment;
     //Applying Data Binding for Views
     ActivityTimelineBinding timelineBinding;
+    ViewPager pager;
+    ViewPagerAdapter pagerAdapter;
 
     public static final int DETAIL_TWEET = 1;
 
@@ -43,15 +46,12 @@ public class TimelineActivity extends AppCompatActivity   {
         // setContentView(R.layout.activity_timeline);
         Toolbar toolbar = timelineBinding.toolbar;
         setSupportActionBar(toolbar);
-        ViewPager pager = timelineBinding.contentTimeline.contentPager;
-        pager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+        pager = timelineBinding.contentTimeline.contentPager;
+        pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        pager.setAdapter(pagerAdapter);
 
         TabLayout tabLayout = timelineBinding.contentTimeline.contentTab;
         tabLayout.setupWithViewPager(pager);
-
-
-        //Configure recycler view
-
 
         FloatingActionButton fab = timelineBinding.fab;
         fab.setOnClickListener(new View.OnClickListener() {
@@ -59,8 +59,8 @@ public class TimelineActivity extends AppCompatActivity   {
             public void onClick(View view) {
                 if (!Utility.isNetworkAvailable(view.getContext())) {
                     //  Organization_Table.name.is("CodePath")
-               //     tweets.addAll(select().from(Tweet.class).orderBy(Tweet_Table.createdAt,false).queryList());
-                 //   recyclerAdapter.notifyDataSetChanged();
+                    //     tweets.addAll(select().from(Tweet.class).orderBy(Tweet_Table.createdAt,false).queryList());
+                    //   recyclerAdapter.notifyDataSetChanged();
                     Toast.makeText(view.getContext(),getResources().getString(R.string.no_network),Toast.LENGTH_LONG).show();
                 }
                 else {
@@ -70,6 +70,16 @@ public class TimelineActivity extends AppCompatActivity   {
                 }
             }
         });
+
+
+
+
+
+
+        //Configure recycler view
+
+
+
 
         //Singleton client
 
@@ -116,5 +126,17 @@ public class TimelineActivity extends AppCompatActivity   {
         Intent i = new Intent(this,ProfileActivity.class);
         i.putExtra("isUser",true);
         startActivity(i);
+    }
+
+    private String getFragmentTag(int viewPagerId, int fragmentPosition)
+    {
+        return "android:switcher:" + viewPagerId + ":" + fragmentPosition;
+    }
+
+    @Override
+    public void onTweet(RequestParams params) {
+        Log.v("Timeline","dddd");
+        HomeTimeLineFragment fragment = (HomeTimeLineFragment) pagerAdapter.getRegisteredFragment(0);
+        fragment.onTweet(params);
     }
 }
