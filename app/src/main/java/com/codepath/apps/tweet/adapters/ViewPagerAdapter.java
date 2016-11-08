@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentManager;
 import com.codepath.apps.tweet.fragments.HomeTimeLineFragment;
 import com.codepath.apps.tweet.fragments.MentionsTimeLineFragment;
 
-/**
- * Created by aharyadi on 11/5/16.
- */
 
 public class ViewPagerAdapter extends SmartFragmentStatePagerAdapter {
     final int PAGE_COUNT = 2;

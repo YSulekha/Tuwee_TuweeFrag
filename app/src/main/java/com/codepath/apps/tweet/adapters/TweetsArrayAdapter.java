@@ -44,19 +44,19 @@ import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 //Array Adapter to populate recyclerView
-public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.ViewHolder>{
+public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.ViewHolder> {
 
     private ArrayList<Tweet> tweets;
     private static Context mContext;
 
-    public TweetsArrayAdapter(Context context, ArrayList<Tweet> results){
+    public TweetsArrayAdapter(Context context, ArrayList<Tweet> results) {
         this.mContext = context;
         this.tweets = results;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.content_item,parent,false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.content_item, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         viewHolder.binding.setHandlers(this);
         return viewHolder;
@@ -70,18 +70,18 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
         holder.binding.setTweet(tweet);
         holder.binding.setUser(user);
 
-       // holder.binding.itemProfile.setTag(user);
+        // holder.binding.itemProfile.setTag(user);
         holder.binding.executePendingBindings();
         new PatternEditableBuilder().
                 addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
                         new PatternEditableBuilder.SpannableClickedListener() {
                             @Override
                             public void onSpanClicked(String text) {
-                                Log.v("ddd",text);
+                                Log.v("ddd", text);
                                 Intent i = new Intent(mContext, ProfileActivity.class);
                                 i.putExtra("isUser", false);
-                                i.putExtra("isUnknownUser",true);
-                                i.putExtra("screenName",text);
+                                i.putExtra("isUnknownUser", true);
+                                i.putExtra("screenName", text);
                                 mContext.startActivity(i);
                             }
                         }).
@@ -90,7 +90,7 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
                             @Override
                             public void onSpanClicked(String text) {
                                 Intent intent = new Intent(mContext, SearchActivity.class);
-                                intent.putExtra("query",text);
+                                intent.putExtra("query", text);
                                 mContext.startActivity(intent);
                             }
                         }).into(holder.binding.itemBody);
@@ -99,34 +99,32 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
     }
 
 
-
-
     @BindingAdapter("bind:imageUrl")
-    public static void loadImage(ImageView imageView, String url){
+    public static void loadImage(ImageView imageView, String url) {
         //    Picasso.with(imageView.getContext()).load(url).placeholder(R.color.colorPrimary).
         //      // into(imageView);
 
-        Glide.with(imageView.getContext()).load(url).bitmapTransform(new RoundedCornersTransformation(imageView.getContext(),8,0)).
+        Glide.with(imageView.getContext()).load(url).bitmapTransform(new RoundedCornersTransformation(imageView.getContext(), 8, 0)).
                 into(imageView);
 
     }
 
     @BindingAdapter("bind:timeCalc")
-    public static void timeCalc(TextView textView, String createdAt){
+    public static void timeCalc(TextView textView, String createdAt) {
         String relativeDate = Utility.relativeTime(createdAt);
         textView.setText(relativeDate);
     }
+
     @BindingAdapter("bind:videoDisplay")
-    public static void videoDisplay(ScalableVideoView view, String url){
-        if(url!=null) {
+    public static void videoDisplay(ScalableVideoView view, String url) {
+        if (url != null) {
             Uri uri = Uri.parse(url);
             try {
                 view.setDataSource(view.getContext(), uri);
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else{
+        } else {
             view.setVisibility(View.INVISIBLE);
         }
     }
@@ -136,7 +134,7 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
         return tweets.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ContentItemBinding binding;
 
@@ -159,7 +157,7 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
         @Override
         public void onClick(View view) {
             int position = getAdapterPosition();
-            switch (view.getId()){
+            switch (view.getId()) {
                 case R.id.item_profile:
                     onClickImage(position);
                     break;
@@ -173,38 +171,39 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
 
         }
 
-        public void onClickImage(int pos){
+        public void onClickImage(int pos) {
             Intent i = new Intent(mContext, ProfileActivity.class);
             User user = (User) tweets.get(pos).getUser();
             i.putExtra("user", Parcels.wrap(user));
             i.putExtra("isUser", false);
-            i.putExtra("isUnknownUser",false);
+            i.putExtra("isUnknownUser", false);
             mContext.startActivity(i);
 
         }
-        public void onClickReply(int pos){
-            FragmentManager fm = ((AppCompatActivity)mContext).getSupportFragmentManager();
+
+        public void onClickReply(int pos) {
+            FragmentManager fm = ((AppCompatActivity) mContext).getSupportFragmentManager();
             Tweet t = tweets.get(pos);
             Bundle args = new Bundle();
-            args.putBoolean("reply",true);
-            args.putString("userId",t.getUser().getScreenName());
-            args.putLong("tweetid",t.getTweetId());
+            args.putBoolean("reply", true);
+            args.putString("userId", t.getUser().getScreenName());
+            args.putLong("tweetid", t.getTweetId());
             ComposeDialog dialog = ComposeDialog.newInstance(args);
             dialog.show(fm, "Dialog");
         }
 
-        public void onClickRetweet(int pos){
-            Log.v("onretweet","dsfsf");
+        public void onClickRetweet(int pos) {
+            Log.v("onretweet", "dsfsf");
             TwitterClient twitterClient = TwitterApplication.getRestClient();
             Tweet t = tweets.get(pos);
             RequestParams params = new RequestParams();
-            params.put("id",t.getTweetId());
+            params.put("id", t.getTweetId());
             twitterClient.retweet(new JsonHttpResponseHandler() {
 
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     super.onSuccess(statusCode, headers, response);
-                    Log.v("onSuccessRetweet","dsf");
+                    Log.v("onSuccessRetweet", "dsf");
 
                 }
 
@@ -214,7 +213,7 @@ public class TweetsArrayAdapter extends RecyclerView.Adapter<TweetsArrayAdapter.
                 }
 
 
-            },params);
+            }, params);
         }
 
     }

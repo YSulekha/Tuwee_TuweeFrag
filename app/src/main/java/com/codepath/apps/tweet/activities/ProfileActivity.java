@@ -31,35 +31,32 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_profile);
         profileBinding = DataBindingUtil.setContentView(this, R.layout.activity_profile);
         Intent intent = getIntent();
-        boolean isUser = intent.getBooleanExtra("isUser",false);
-        boolean isUnknownUser = intent.getBooleanExtra("isUnknownUser",false);
+        boolean isUser = intent.getBooleanExtra("isUser", false);
+        boolean isUnknownUser = intent.getBooleanExtra("isUnknownUser", false);
         User user = null;
-        if(isUser){
+        if (isUser) {
             getUserHeader();
-        }
-        else if(isUnknownUser){
+        } else if (isUnknownUser) {
             String screenName = intent.getStringExtra("screenName");
             getUserInfo(screenName);
-        }
-        else{
+        } else {
             user = (User) Parcels.unwrap(intent.getParcelableExtra("user"));
             populateProfileHeader(user);
         }
 
-        if(savedInstanceState==null){
+        if (savedInstanceState == null) {
             String screenName = null;
-            if(user != null){
+            if (user != null) {
                 screenName = user.getScreenName();
             }
-            if(isUnknownUser) {
+            if (isUnknownUser) {
                 screenName = intent.getStringExtra("screenName");
             }
             UserTimeLineFragment userTimeLineFragment = UserTimeLineFragment.newInstance(screenName);
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.profile_container,userTimeLineFragment);
+            transaction.replace(R.id.profile_container, userTimeLineFragment);
             transaction.commit();
         }
 
@@ -68,7 +65,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void populateProfileHeader(User user) {
         getSupportActionBar().setTitle(user.getScreenName());
         ImageView profileImage = profileBinding.profileImage;
-        Glide.with(this).load(user.getImageUrl()).bitmapTransform(new RoundedCornersTransformation(profileImage.getContext(),8,0)).
+        Glide.with(this).load(user.getImageUrl()).bitmapTransform(new RoundedCornersTransformation(profileImage.getContext(), 8, 0)).
                 into(profileImage);
         profileBinding.profileName.setText(user.getUserName());
         profileBinding.profileTagline.setText(user.getTagLine());
@@ -77,14 +74,13 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
-    private void getUserHeader(){
+    private void getUserHeader() {
         twitterClient = TwitterApplication.getRestClient();
         twitterClient.getUserInfo(new JsonHttpResponseHandler() {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 User user = User.fromJSONObject(response);
-                Log.v("ProfileActTagLine",response.toString());
                 populateProfileHeader(user);
 
             }
@@ -97,14 +93,14 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
     }
-    private void getUserInfo(String screenName){
+
+    private void getUserInfo(String screenName) {
         twitterClient = TwitterApplication.getRestClient();
-        twitterClient.getUserDetails(screenName,new JsonHttpResponseHandler() {
+        twitterClient.getUserDetails(screenName, new JsonHttpResponseHandler() {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 User user = User.fromJSONObject(response);
-                Log.v("ProfileActTagLine",response.toString());
                 populateProfileHeader(user);
 
             }

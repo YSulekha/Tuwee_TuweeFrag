@@ -83,7 +83,6 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
     }
 
     public void onClickRetweet(View v){
-        Log.v("onretweet","dsfsf");
         TwitterClient twitterClient = TwitterApplication.getRestClient();
         RequestParams params = new RequestParams();
         params.put("id",t.getTweetId());
@@ -94,8 +93,6 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);
                 Toast.makeText(context,getResources().getString(R.string.retweeted_success),Toast.LENGTH_SHORT).show();
-                Log.v("onSuccessRetweet","dsf");
-
             }
 
             @Override
@@ -108,7 +105,6 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
     }
 
     public void onClickFavorite(View v){
-        Log.v("onFavorite","dsfsf");
         TwitterClient twitterClient = TwitterApplication.getRestClient();
         RequestParams params = new RequestParams();
         params.put("id",t.getTweetId());
@@ -121,10 +117,7 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
                 DrawableCompat.setTint(binding.detailFavorite.getDrawable(), ContextCompat.getColor(context, android.R.color.holo_red_dark));
                 int x = Integer.parseInt(t.getFavoritedCount())+1;
                 t.setFavoritedCount(String.valueOf(x));
-                binding.detailFavoriteText.setText(String.valueOf(t.getFavoritedCount()+1));
-                //    binding.detailFavorite.set
-              //  Toast.makeText(context,getResources().getString(R.string.retweeted_success),Toast.LENGTH_SHORT).show();
-                Log.v("onSuccessRetweet","dsf");
+                binding.detailFavoriteText.setText(String.valueOf(x));
 
             }
 
@@ -138,8 +131,6 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
     }
 
     public static String timeCalc(String createdAt){
-
-        //"created_at":"Mon Oct 31 14:20:57 +0000 2016"
         String relativeDate = Utility.relativeTime(createdAt);
         String d = Utility.formatDate(createdAt);
         return d;
@@ -153,7 +144,6 @@ public class TwitterDetailActivity extends AppCompatActivity implements ComposeD
 
     @Override
     public void onTweet(RequestParams params) {
-        Log.v("DetailOnTweet","dd");
         isReply = true;
         TweetsListFragment fragment = new TweetsListFragment();
         fragment.onTweet(params);

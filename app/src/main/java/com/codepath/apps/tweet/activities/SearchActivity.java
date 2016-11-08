@@ -11,9 +11,6 @@ import com.codepath.apps.tweet.R;
 import com.codepath.apps.tweet.databinding.ActivitySearchBinding;
 import com.codepath.apps.tweet.fragments.SearchFragment;
 
-/**
- * Created by aharyadi on 11/7/16.
- */
 
 public class SearchActivity extends AppCompatActivity {
    ActivitySearchBinding searchBinding;
